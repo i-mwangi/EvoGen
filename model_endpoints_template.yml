@@ -1,0 +1,92 @@
+# model_endpoints_template.yml
+# Rename this file to model_endpoints.yml 
+# and fill in the API keys and endpoint URLs for the models you want to use
+default_endpoint_id: "azure/gpt-4o-mini"
+
+# EvoGen cloud configuration
+# fill this with your EvoGen API key and base URL 
+# and setup Config.mode="cloud"
+EvoGen:
+  api_key: "your-EvoGen-api-key" # fill in your EvoGen API key
+  api_base: "https://cloud.EvoGen.com/"
+
+# If you have a valid EvoGen API key, don't modify the following section
+# If you have a cloud LiteLLM access, or your own LiteLLM proxy, fill this
+# and set accordingly use and use_proxy to true
+# Set up Config.mode="local"
+lite_llm:
+  use: false # Set to true if you want to use your Lite LLM
+  use_proxy: false # Set to true if you want to use your own Lite LLM proxy
+  api_key: "your-litellm-api-key" # fill in your Lite LLM API key
+  api_base: "your-litellm-proxy-url" # fill in your Lite LLM proxy URL
+
+# If you have a valid EvoGen API key, don't modify the following section
+# If you have a cloud LiteLLM access, or your own LiteLLM proxy, fill this
+# with your own endpoint IDs
+# If you have your own access to LLM providers, 
+# uncomment the endpoints you want to use and fill in the required credentials
+endpoints:
+  # OpenAI endpoints
+  # - endpoint_id: "gpt-4o-mini"
+  #   provider: "OpenAI"
+  #   api_key: "YOUR_OPENAI_API_KEY" # fill in your OpenAI API key
+
+  # OpenRouter Endpoints
+  - endpoint_id: "openrouter/quasar-alpha"
+    enpdpoint_url: "https://openrouter.ai/api/v1" # OpenRouter API endpoint URL
+    provider: "OpenRouter"
+    api_key: "YOUR_OPENROUTER_API_KEY" # FILL IN YOUR OPENROUTER API KEY
+
+  # Azure OpenAI endpoints
+  - endpoint_id: "azure/gpt-4o-mini"
+    provider: "Azure OpenAI"
+    # api_key: "YOUR_AZURE_OPENAI_API_KEY" # fill in your Azure OpenAI API key
+    # endpoint_url: "AZURE_OPENAI_ENDPOINT_URL" # fill in the Azure OpenAI endpoint URL
+    # api_version: "API_VERSION" # fill in the Azure OpenAI API version
+    # deployment_name: "DEPLOYMENT_NAME" # fill in the Azure OpenAI deployment name
+
+  - endpoint_id: "azure/gpt-4.1-mini"
+    provider: "Azure OpenAI"
+    # api_key: "5watVOFDoaKrwDecKP1l23gsspDyO8Bykhg4x0hKv8Z8H98rZSSFJQQJ99BDACHYHv6XJ3w3AAAAACOGkmg7"
+    # endpoint_url: "https://aihubEvoGen5126286601.cognitiveservices.azure.com/"
+    # api_version: "2025-01-01-preview"
+    # deployment_name: "gpt-4.1-mini"
+  
+  - endpoint_id: "azure/gpt-4.1-nano"
+    provider: "Azure OpenAI"
+    # api_key: "5watVOFDoaKrwDecKP1l23gsspDyO8Bykhg4x0hKv8Z8H98rZSSFJQQJ99BDACHYHv6XJ3w3AAAAACOGkmg7"
+    # endpoint_url: "https://aihubEvoGen5126286601.cognitiveservices.azure.com/"
+    # api_version: "2025-01-01-preview"
+    # deployment_name: "gpt-4.1-nano"
+
+  - endpoint_id: "azure/gpt-4o"
+    provider: "Azure OpenAI"
+    # api_key: "5watVOFDoaKrwDecKP1l23gsspDyO8Bykhg4x0hKv8Z8H98rZSSFJQQJ99BDACHYHv6XJ3w3AAAAACOGkmg7"
+    # endpoint_url: "https://aihubEvoGen5126286601.cognitiveservices.azure.com/"
+    # api_version: "2025-01-01-preview"
+    # deployment_name: "gpt-4o"
+  
+  # Azure ML endpoints
+  # - endpoint_id: "llama3-8b"
+  #   provider: "Azure ML"
+  #   api_key: "YOUR_AZURE_ML_API_KEY" # fill in your Azure ML API key
+    # endpoint_url: "AZURE_ENDPOINT_URL" # fill in the Azure ML endpoint URL
+
+  # Anthropic endpoints
+  # - endpoint_id: "claude-3-sonnet-20250229"
+  #   provider: "Anthropic"
+  #   api_key: "YOUR_OPENAI_API_KEY" # fill in your Anthropic API key
+
+  # Hugging Face endpoints
+  - endpoint_id: "microsoft/Phi-3-mini-4k-instruct"
+    provider: "Hugging Face"
+
+   # Google endpoints
+  - endpoint_id: "gemini-2.5-pro-exp-03-25"
+    provider: "Google"
+    api_key: "YOUR_GOOGLE_API_KEY" # fill in your Google API key
+
+    # Ollama endpoints 
+  - endpoint_id: "ollama/ModelName"  # Replace with the actual model name you want to use, e.g., "llama3.2". Keep the 'ollama/' prefix.
+    provider: "Ollama"
+    endpoint_url: "http://<Ollama host IP>:11434/" # Replace with the actual IP address of your Ollama host.
