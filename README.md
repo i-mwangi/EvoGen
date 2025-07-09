@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="<img width="544" height="511" alt="Image" src="https://github.com/user-attachments/assets/84cba527-b99f-41bd-abb3-edc1b29a2d4e" />"/>
+  <img width="544" height="511" alt="Image" src="https://github.com/user-attachments/assets/84cba527-b99f-41bd-abb3-edc1b29a2d4e" />
   <h4> Autonomous AI Agents that Self-Evolve </h4>
   <h3>
 
