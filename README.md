@@ -15,8 +15,9 @@
 
   </h3>
 </div>
+"""EvoGen is a distributed artificial intelligence factory, a project from the EvoGen AI Lab’s incubator. Our vision: enabling humans and agents to collaborate in building tomorrow's personalized oncology treatment AI in an open and democratic way.
 
-EvoGen is a **distributed artificial intelligence factory**, an open source project from the EvoGen Ai Lab’s incubator (French lab). Our vision: enabling humans and agents to collaborate in building tomorrow's AI in an open and democratic way.
+Copyright (c) 2025, Evo-Gen AI Lab.
 
 > "AI can just as easily become the weapon of a surveillance capitalism dystopia as the foundation of a democratic renaissance."
 
